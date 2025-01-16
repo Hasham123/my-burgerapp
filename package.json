@@ -6,7 +6,12 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    
+      
+        "deploy": "if [ \"$IGNORE_ERRORS\" = \"true\" ]; then vercel; else vercel && exit 1; fi"
+      
+    
   },
   "dependencies": {
     "next": "15.1.4",
